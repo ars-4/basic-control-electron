@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Control</title>
+</head>
+
+<body>
+    <div class="titlebar row">
+        <div class="title">
+            <h5>Control Management</h5>
+        </div>
+        <div class="drag"></div>
+        <div class="menu">
+            <img id="minimize-btn" src="static/images/minimize.png">
+            <img id="maximize-btn" src="static/images/maximize.png">
+            <img id="close-btn" src="static/images/close.png">
+        </div>
+    </div>
+
+
+    <div class="mainbody">
+        <div class="shownDiv"></div>
+        <div class="hiddenDiv" id="hidden-div">
+            <div class="titlebar">
+                <div class="title">
+                    <button class="btn btn-dark" id="runcommandbtn">Run Command</button>
+                </div>
+            </div>
+            <div class="terminal-body" id="terminal">
+                <div id="outputBox"></div>
+                <p><span id="path">Loading\Please\Wait</span>&gt;<input id="inputBox" type="text" size="45"
+                        onkeyup="input_function(event)"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="nav-item dropdown first">
+            <a class="nav-link text-light small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Options
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a id="openDevToolsBtn" class="dropdown-item small" href="#">Open DevTools</a></li>
+                <li><a id="openNewWindowBtn" class="dropdown-item small" href="#">New Window</a></li>
+                <li><a id="closeMenuBtn" class="dropdown-item small" href="#">Close</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-item dropdown second">
+            <a class="nav-link text-light small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                View
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a id="viewTerminalButton" class="dropdown-item small" href="#">Terminal</a></li>
+                <li><a class="dropdown-item small" href="#">Logs</a></li>
+                <li><a href="https://ars-7.herokuapp.com/" target="_blank" class="dropdown-item small">About</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+@import url('bootstrap.min.css');
+@import url('fonts/stylesheet.css');
+
+body {
+    background-color: var(--bs-dark);
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.titlebar {
+    background: #000;
+    padding: 10px;
+    height: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.titlebar .title h5 {
+    cursor: pointer;
+}
+.titlebar .title {
+    width: 220px;
+    position: absolute;
+    left: 7px;
+}
+
+.titlebar .drag {
+    -webkit-app-region: drag;
+    background: #000;
+    margin-top: -1%;
+    margin-bottom: -0.6%;
+    width: 50%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 165px;
+    left: 220px;
+    z-index: -1;
+}
+
+
+.titlebar .menu img {
+    width: 40px;
+    z-index: 2;
+}
+.titlebar .menu {
+    width: 155px;
+    position:absolute;
+    right: 13px;
+    z-index: 1;
+}
+
+.mainbody {
+    position: static;
+}
+
+.mainbody .shownDiv {
+    height: 300px;
+}
+.mainbody .hiddenDiv {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+}
+.mainbody .hiddenDiv .terminal-body {
+    width: 100%;
+    height: 260px;
+    background-color: #000;
+    overflow-x: hidden;
+    color: #cfcfcf;
+}
+.mainbody .hiddenDiv .terminal-body input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #cfcfcf;
+}
+
+
+
+.footer {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 30px;
+}
+
+.footer .first {
+    left: 8px;
+}
+.footer .second {
+    left: 80px;
+}
+.footer .dropdown {
+    position: absolute;
+    bottom: 0;
+}
+.footer .dropdown-menu {
+    background-color: #1a1a1a;
+}
+.footer .dropdown-menu li:hover, .footer .dropdown-menu a:hover {
+    background-color: var(--bs-primary);
+}
+.footer .dropdown-menu a {
+    color: #fff;
+}
